@@ -87,7 +87,7 @@ const Header = ({ setCoordinates }: TypeHeaderProps) => {
             noWrap
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Map Companion
+            Travel Advisor
           </Typography>
 
           <Box display="flex" alignItems="center">
