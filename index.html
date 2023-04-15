@@ -65,10 +65,17 @@
         if (name == "" || password.length < 6) {
           alert("Name can't be blank or password must be at least 6 characters");
           return false;
-        } else if (name == "balaji@gmail.com" && password == "vbalaji6") {
+        } else if (name == "jeevan@gmail.com" && password == "Jeevan@143") {
           alert("Login Successful");
           window.location.href = "https://traveladvisor01.netlify.app/"; // Redirect to the new page
-        } else {
+        } else if (name == "chandana@gmail.com" && password == "Chandana@123") {
+          alert("Login Successful");
+          window.location.href = "https://traveladvisor01.netlify.app/";
+        }else if (name == "manisha@gmail.com" && password == "Manisha@123") {
+          alert("Login Successful");
+          window.location.href = "https://traveladvisor01.netlify.app/";
+        }
+        else {
           alert("Login failed");
           return false;
         }
