@@ -1,0 +1,78 @@
+<html>
+  <br>
+  <br>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form name="form" method="post">
+      <div class="cont">
+        <div class="form sign-in">
+          <h2>Welcome</h2>
+          <label>
+            <span>Email</span>
+            <input type="email" name="name"/>
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" name="password"/>
+          </label>
+          <p class="forgot-pass">Forgot Password?</p>
+          <button type="button" class="submit" onclick="validateform()" id="signin-btn">Sign In</button>
+        </div>
+        <div class="sub-cont">
+          <div class="img">
+            <div class="img__text m--up">
+              <h3>Don't have an account? Please Sign Up!<h3>
+            </div>
+            <div class="img__text m--in">
+              <h3>If you already has an account, just sign in.<h3>
+            </div>
+            <div class="img__btn">
+              <span class="m--up">Sign Up</span>
+              <span class="m--in">Sign In</span>
+            </div>
+          </div>
+          <div class="form sign-up">
+            <h2>Create Your Account</h2>
+            <label>
+              <span>Name</span>
+              <input type="text" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" />
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" />
+            </label>
+            <button type="button" class="submit">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      document.querySelector('.img__btn').addEventListener('click', function() {
+        document.querySelector('.cont').classList.toggle('s--signup');
+      });
+
+      function validateform() {
+        var name = document.form.name.value;
+        var password = document.form.password.value;
+
+        if (name == "" || password.length < 6) {
+          alert("Name can't be blank or password must be at least 6 characters");
+          return false;
+        } else if (name == "balaji@gmail.com" && password == "vbalaji6") {
+          alert("Login Successful");
+          window.location.href = "https://traveladvisor01.netlify.app/"; // Redirect to the new page
+        } else {
+          alert("Login failed");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
