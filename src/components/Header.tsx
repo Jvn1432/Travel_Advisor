@@ -96,7 +96,7 @@ const Header = ({ setCoordinates }: TypeHeaderProps) => {
               noWrap
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              Explore new places
+            <button sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}><a href='https://www.travelplann.com/'>AI Travel Planner</a></button>
             </Typography>
 
             <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
